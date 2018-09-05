@@ -50,7 +50,7 @@ body{
 	height: 100px;
 	margin-bottom: -100px;
 	line-height:100px;
-	background: #1e9fff;
+	background: #FF705E;
 }
 .lay-blog .logo-img{
 	height:65px;
@@ -134,7 +134,7 @@ body{
 	left:0px;
 	top:100px;
 	text-align:center;
-	background:#1e9fff;
+	background:#FF705E;
 	display:none;
 	z-index: 2;
 }
