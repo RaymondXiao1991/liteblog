@@ -28,7 +28,7 @@ layui.define(['element', 'form', 'laypage', 'jquery', 'laytpl', 'sysn'], functio
         laypage.render({
             elem: 'test1' //注意，这里的 test1 是 ID，不用加 # 号
             , count: count //数据总数，从服务端得到
-            , theme: '#1e9fff'
+            , theme: '#FF705E'
             , limit: 5
             , jump: function (obj, first) {
                 if (count <= 0) {
