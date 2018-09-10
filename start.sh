@@ -15,3 +15,5 @@ if [ ! -f "/app/conf/app.conf" ] ; then
 fi
 
 liteblog
+
+nohup /root/liteblog/liteblog.x >> /root/liteblog/data/logs/lyblog.log 2>&1 &
