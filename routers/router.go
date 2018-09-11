@@ -1,7 +1,7 @@
 package routers
 
 import (
-	"github.com/jicg/liteblog/controllers"
+	"controllers"
 	"github.com/astaxie/beego"
 )
 

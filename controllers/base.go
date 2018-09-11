@@ -2,9 +2,9 @@ package controllers
 
 import (
 	"github.com/astaxie/beego"
-	"github.com/jicg/liteblog/models"
+	"models"
 	"errors"
-	"github.com/jicg/liteblog/syserrors"
+	"syserrors"
 	"github.com/satori/go.uuid"
 )
 

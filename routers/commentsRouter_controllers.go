@@ -7,7 +7,7 @@ import (
 
 func init() {
 
-	beego.GlobalControllerRouter["github.com/jicg/liteblog/controllers:IndexController"] = append(beego.GlobalControllerRouter["github.com/jicg/liteblog/controllers:IndexController"],
+	beego.GlobalControllerRouter["controllers:IndexController"] = append(beego.GlobalControllerRouter["controllers:IndexController"],
 		beego.ControllerComments{
 			Method: "Get",
 			Router: `/`,
@@ -15,7 +15,7 @@ func init() {
 			MethodParams: param.Make(),
 			Params: nil})
 
-	beego.GlobalControllerRouter["github.com/jicg/liteblog/controllers:IndexController"] = append(beego.GlobalControllerRouter["github.com/jicg/liteblog/controllers:IndexController"],
+	beego.GlobalControllerRouter["controllers:IndexController"] = append(beego.GlobalControllerRouter["controllers:IndexController"],
 		beego.ControllerComments{
 			Method: "GetAbout",
 			Router: `/about`,
@@ -23,7 +23,7 @@ func init() {
 			MethodParams: param.Make(),
 			Params: nil})
 
-	beego.GlobalControllerRouter["github.com/jicg/liteblog/controllers:IndexController"] = append(beego.GlobalControllerRouter["github.com/jicg/liteblog/controllers:IndexController"],
+	beego.GlobalControllerRouter["controllers:IndexController"] = append(beego.GlobalControllerRouter["controllers:IndexController"],
 		beego.ControllerComments{
 			Method: "GetComment",
 			Router: `/comment/:key`,
@@ -31,7 +31,7 @@ func init() {
 			MethodParams: param.Make(),
 			Params: nil})
 
-	beego.GlobalControllerRouter["github.com/jicg/liteblog/controllers:IndexController"] = append(beego.GlobalControllerRouter["github.com/jicg/liteblog/controllers:IndexController"],
+	beego.GlobalControllerRouter["controllers:IndexController"] = append(beego.GlobalControllerRouter["controllers:IndexController"],
 		beego.ControllerComments{
 			Method: "GetDetail",
 			Router: `/details/:key`,
@@ -39,7 +39,7 @@ func init() {
 			MethodParams: param.Make(),
 			Params: nil})
 
-	beego.GlobalControllerRouter["github.com/jicg/liteblog/controllers:IndexController"] = append(beego.GlobalControllerRouter["github.com/jicg/liteblog/controllers:IndexController"],
+	beego.GlobalControllerRouter["controllers:IndexController"] = append(beego.GlobalControllerRouter["controllers:IndexController"],
 		beego.ControllerComments{
 			Method: "GetMessage",
 			Router: `/message`,
@@ -47,7 +47,7 @@ func init() {
 			MethodParams: param.Make(),
 			Params: nil})
 
-	beego.GlobalControllerRouter["github.com/jicg/liteblog/controllers:IndexController"] = append(beego.GlobalControllerRouter["github.com/jicg/liteblog/controllers:IndexController"],
+	beego.GlobalControllerRouter["controllers:IndexController"] = append(beego.GlobalControllerRouter["controllers:IndexController"],
 		beego.ControllerComments{
 			Method: "GetReg",
 			Router: `/reg`,
@@ -55,7 +55,7 @@ func init() {
 			MethodParams: param.Make(),
 			Params: nil})
 
-	beego.GlobalControllerRouter["github.com/jicg/liteblog/controllers:IndexController"] = append(beego.GlobalControllerRouter["github.com/jicg/liteblog/controllers:IndexController"],
+	beego.GlobalControllerRouter["controllers:IndexController"] = append(beego.GlobalControllerRouter["controllers:IndexController"],
 		beego.ControllerComments{
 			Method: "GetUser",
 			Router: `/user`,
@@ -63,7 +63,7 @@ func init() {
 			MethodParams: param.Make(),
 			Params: nil})
 
-	beego.GlobalControllerRouter["github.com/jicg/liteblog/controllers:MessageController"] = append(beego.GlobalControllerRouter["github.com/jicg/liteblog/controllers:MessageController"],
+	beego.GlobalControllerRouter["controllers:MessageController"] = append(beego.GlobalControllerRouter["controllers:MessageController"],
 		beego.ControllerComments{
 			Method: "Count",
 			Router: `/count`,
@@ -71,7 +71,7 @@ func init() {
 			MethodParams: param.Make(),
 			Params: nil})
 
-	beego.GlobalControllerRouter["github.com/jicg/liteblog/controllers:MessageController"] = append(beego.GlobalControllerRouter["github.com/jicg/liteblog/controllers:MessageController"],
+	beego.GlobalControllerRouter["controllers:MessageController"] = append(beego.GlobalControllerRouter["controllers:MessageController"],
 		beego.ControllerComments{
 			Method: "NewMessage",
 			Router: `/new/?:key`,
@@ -79,7 +79,7 @@ func init() {
 			MethodParams: param.Make(),
 			Params: nil})
 
-	beego.GlobalControllerRouter["github.com/jicg/liteblog/controllers:MessageController"] = append(beego.GlobalControllerRouter["github.com/jicg/liteblog/controllers:MessageController"],
+	beego.GlobalControllerRouter["controllers:MessageController"] = append(beego.GlobalControllerRouter["controllers:MessageController"],
 		beego.ControllerComments{
 			Method: "Query",
 			Router: `/query`,
@@ -87,7 +87,7 @@ func init() {
 			MethodParams: param.Make(),
 			Params: nil})
 
-	beego.GlobalControllerRouter["github.com/jicg/liteblog/controllers:NoteController"] = append(beego.GlobalControllerRouter["github.com/jicg/liteblog/controllers:NoteController"],
+	beego.GlobalControllerRouter["controllers:NoteController"] = append(beego.GlobalControllerRouter["controllers:NoteController"],
 		beego.ControllerComments{
 			Method: "Del",
 			Router: `/del/:key`,
@@ -95,7 +95,7 @@ func init() {
 			MethodParams: param.Make(),
 			Params: nil})
 
-	beego.GlobalControllerRouter["github.com/jicg/liteblog/controllers:NoteController"] = append(beego.GlobalControllerRouter["github.com/jicg/liteblog/controllers:NoteController"],
+	beego.GlobalControllerRouter["controllers:NoteController"] = append(beego.GlobalControllerRouter["controllers:NoteController"],
 		beego.ControllerComments{
 			Method: "EditPage",
 			Router: `/edit/:key`,
@@ -103,7 +103,7 @@ func init() {
 			MethodParams: param.Make(),
 			Params: nil})
 
-	beego.GlobalControllerRouter["github.com/jicg/liteblog/controllers:NoteController"] = append(beego.GlobalControllerRouter["github.com/jicg/liteblog/controllers:NoteController"],
+	beego.GlobalControllerRouter["controllers:NoteController"] = append(beego.GlobalControllerRouter["controllers:NoteController"],
 		beego.ControllerComments{
 			Method: "NewPage",
 			Router: `/new`,
@@ -111,7 +111,7 @@ func init() {
 			MethodParams: param.Make(),
 			Params: nil})
 
-	beego.GlobalControllerRouter["github.com/jicg/liteblog/controllers:NoteController"] = append(beego.GlobalControllerRouter["github.com/jicg/liteblog/controllers:NoteController"],
+	beego.GlobalControllerRouter["controllers:NoteController"] = append(beego.GlobalControllerRouter["controllers:NoteController"],
 		beego.ControllerComments{
 			Method: "Save",
 			Router: `/save/:key`,
@@ -119,7 +119,7 @@ func init() {
 			MethodParams: param.Make(),
 			Params: nil})
 
-	beego.GlobalControllerRouter["github.com/jicg/liteblog/controllers:PraiseController"] = append(beego.GlobalControllerRouter["github.com/jicg/liteblog/controllers:PraiseController"],
+	beego.GlobalControllerRouter["controllers:PraiseController"] = append(beego.GlobalControllerRouter["controllers:PraiseController"],
 		beego.ControllerComments{
 			Method: "Parse",
 			Router: `/:type/:key`,
@@ -127,7 +127,7 @@ func init() {
 			MethodParams: param.Make(),
 			Params: nil})
 
-	beego.GlobalControllerRouter["github.com/jicg/liteblog/controllers:UploadController"] = append(beego.GlobalControllerRouter["github.com/jicg/liteblog/controllers:UploadController"],
+	beego.GlobalControllerRouter["controllers:UploadController"] = append(beego.GlobalControllerRouter["controllers:UploadController"],
 		beego.ControllerComments{
 			Method: "UploadFile",
 			Router: `/uploadfile`,
@@ -135,7 +135,7 @@ func init() {
 			MethodParams: param.Make(),
 			Params: nil})
 
-	beego.GlobalControllerRouter["github.com/jicg/liteblog/controllers:UploadController"] = append(beego.GlobalControllerRouter["github.com/jicg/liteblog/controllers:UploadController"],
+	beego.GlobalControllerRouter["controllers:UploadController"] = append(beego.GlobalControllerRouter["controllers:UploadController"],
 		beego.ControllerComments{
 			Method: "UploadImg",
 			Router: `/uploadimg`,
@@ -143,7 +143,7 @@ func init() {
 			MethodParams: param.Make(),
 			Params: nil})
 
-	beego.GlobalControllerRouter["github.com/jicg/liteblog/controllers:UserController"] = append(beego.GlobalControllerRouter["github.com/jicg/liteblog/controllers:UserController"],
+	beego.GlobalControllerRouter["controllers:UserController"] = append(beego.GlobalControllerRouter["controllers:UserController"],
 		beego.ControllerComments{
 			Method: "Login",
 			Router: `/login`,
@@ -151,7 +151,7 @@ func init() {
 			MethodParams: param.Make(),
 			Params: nil})
 
-	beego.GlobalControllerRouter["github.com/jicg/liteblog/controllers:UserController"] = append(beego.GlobalControllerRouter["github.com/jicg/liteblog/controllers:UserController"],
+	beego.GlobalControllerRouter["controllers:UserController"] = append(beego.GlobalControllerRouter["controllers:UserController"],
 		beego.ControllerComments{
 			Method: "Logout",
 			Router: `/logout`,
@@ -159,7 +159,7 @@ func init() {
 			MethodParams: param.Make(),
 			Params: nil})
 
-	beego.GlobalControllerRouter["github.com/jicg/liteblog/controllers:UserController"] = append(beego.GlobalControllerRouter["github.com/jicg/liteblog/controllers:UserController"],
+	beego.GlobalControllerRouter["controllers:UserController"] = append(beego.GlobalControllerRouter["controllers:UserController"],
 		beego.ControllerComments{
 			Method: "Reg",
 			Router: `/reg`,

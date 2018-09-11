@@ -1,8 +1,8 @@
 package controllers
 
 import (
-	"github.com/jicg/liteblog/models"
-	"github.com/jicg/liteblog/syserrors"
+	"models"
+	"syserrors"
 )
 
 type MessageController struct {

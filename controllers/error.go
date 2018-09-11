@@ -2,7 +2,7 @@ package controllers
 
 import (
 	"fmt"
-	"github.com/jicg/liteblog/syserrors"
+	"syserrors"
 	"github.com/astaxie/beego/logs"
 )
 

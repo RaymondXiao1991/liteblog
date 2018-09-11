@@ -1,7 +1,7 @@
 package controllers
 
 import (
-	"github.com/jicg/liteblog/syserrors"
+	"syserrors"
 	"fmt"
 )
 

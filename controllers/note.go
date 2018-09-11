@@ -1,9 +1,9 @@
 package controllers
 
 import (
-	"github.com/jicg/liteblog/models"
+	"models"
 	"time"
-	"github.com/jicg/liteblog/syserrors"
+	"syserrors"
 	"github.com/jinzhu/gorm"
 	"github.com/PuerkitoBio/goquery"
 	"bytes"
@@ -15,9 +15,6 @@ type NoteController struct {
 
 func (ctx *NoteController) NestPrepare() {
 	ctx.MustLogin()
-	if ctx.User.Role != 0 {
-		ctx.Abort500(syserrors.NewError("您没有权限修改文章", nil))
-	}
 }
 
 // @router /new [get]

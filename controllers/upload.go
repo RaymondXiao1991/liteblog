@@ -6,7 +6,7 @@ import (
 	"path"
 	"strconv"
 	"time"
-	"github.com/jicg/liteblog/syserrors"
+	"syserrors"
 	"mime/multipart"
 	"io/ioutil"
 	"encoding/json"
