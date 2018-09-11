@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>闲言轻博客</title>
+    <title>寓言轻博客</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 {{template "comm/link.html"}}
     <style>
@@ -30,7 +30,7 @@
         {{if .IsLogin}}
             <h4 class="item-title">
                 <p><i class="layui-icon layui-icon-speaker"></i>
-                {{.User.Name}},您已经登陆,是否<a href="/logout"><span>登出</span></a>？
+                {{.User.Name}},您已经登录,是否<a href="/logout"><span>退出</span></a>？
                 </p>
             </h4>
         {{if eq .User.Role 0}}
@@ -69,7 +69,7 @@
                         </div>
                         <div class="layui-form-item">
                             <div class="layui-input-block">
-                                <button class="layui-btn" lay-submit lay-filter="login">登陆</button>
+                                <button class="layui-btn" lay-submit lay-filter="login">登录</button>
                                 <a href="/reg" class="layui-btn layui-btn-primary">注册用户</a>
                             </div>
                         </div>

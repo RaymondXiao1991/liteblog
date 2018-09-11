@@ -1,6 +1,6 @@
 /**
 
- @Name：layui.blog 闲言轻博客模块
+ @Name：layui.blog 寓言轻博客模块
  @Author：徐志文
  @License：MIT
  @Site：http://www.layui.com/template/xianyan/
@@ -222,7 +222,7 @@ layui.define(['element', 'form', 'laypage', 'jquery', 'laytpl', 'sysn'], functio
     // end 图片遮罩
 
 
-    //登陆
+    //登录
     form.on('submit(login)', function (fromdata) {
         sysn.post("/login", fromdata.field)
         // .setTimeout(5000)

@@ -23,7 +23,7 @@ func (c *UserController) Login() {
 		c.Abort500(syserrors.NewError("邮箱或密码不对", err))
 	}
 	c.SetSession(SESSION_USER_KEY, user)
-	c.JSONOk("登陆成功", "/")
+	c.JSONOk("登录成功", "/")
 }
 
 // @router /reg [post]

@@ -23,7 +23,7 @@ type BaseController struct {
 func (ctx *BaseController) Prepare() {
 	ctx.Data["Path"] = ctx.Ctx.Request.RequestURI
 	ctx.Dao = models.NewDB()
-	// 验证用户是否登陆
+	// 验证用户是否登录
 	ctx.IsLogin = false
 	if u, ok := ctx.GetSession(SESSION_USER_KEY).(models.User); ok {
 		ctx.User = u
